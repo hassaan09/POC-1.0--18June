@@ -1,0 +1,3632 @@
+[
+  {
+    "query": "Open YouTube and search for Python tutorials",
+    "steps": [
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Search Box",
+              "coordinates": [
+                297,
+                161
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Search Box",
+          "coordinates": [
+            398,
+            190
+          ]
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Search Box",
+              "coordinates": [
+                331,
+                197
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "Search Box",
+          "text": "YouTube and search for Python tutorials"
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "button",
+              "label": "Search",
+              "coordinates": [
+                83,
+                174
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Search",
+          "coordinates": [
+            497,
+            350
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "query": "Open YouTube and search for Python tutorials",
+    "steps": [
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Search Box",
+              "coordinates": [
+                83,
+                266
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Search Box",
+          "coordinates": [
+            465,
+            81
+          ]
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Search Box",
+              "coordinates": [
+                151,
+                496
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "Search Box",
+          "text": "YouTube and search for Python tutorials"
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "button",
+              "label": "Search",
+              "coordinates": [
+                201,
+                277
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Search",
+          "coordinates": [
+            125,
+            374
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "query": "Open YouTube and search for Python tutorials",
+    "steps": [
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Search Box",
+              "coordinates": [
+                262,
+                427
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Search Box",
+          "coordinates": [
+            481,
+            467
+          ]
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Search Box",
+              "coordinates": [
+                351,
+                163
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "Search Box",
+          "text": "YouTube and search for Python tutorials"
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "button",
+              "label": "Search",
+              "coordinates": [
+                315,
+                493
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Search",
+          "coordinates": [
+            332,
+            309
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "query": "Navigate to Facebook login page",
+    "steps": [
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Search Box",
+              "coordinates": [
+                165,
+                324
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Search Box",
+          "coordinates": [
+            145,
+            101
+          ]
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Search Box",
+              "coordinates": [
+                288,
+                233
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "Search Box",
+          "text": "to Facebook login page"
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "button",
+              "label": "Search",
+              "coordinates": [
+                342,
+                78
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Search",
+          "coordinates": [
+            92,
+            137
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "query": "Navigate to Facebook login page",
+    "steps": [
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Search Box",
+              "coordinates": [
+                194,
+                268
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Search Box",
+          "coordinates": [
+            415,
+            475
+          ]
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Search Box",
+              "coordinates": [
+                115,
+                445
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "Search Box",
+          "text": "to Facebook login page"
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "button",
+              "label": "Search",
+              "coordinates": [
+                66,
+                175
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Search",
+          "coordinates": [
+            486,
+            397
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "query": "Navigate to Facebook login page",
+    "steps": [
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Search Box",
+              "coordinates": [
+                281,
+                421
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Search Box",
+          "coordinates": [
+            378,
+            281
+          ]
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Search Box",
+              "coordinates": [
+                330,
+                497
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "Search Box",
+          "text": "to Facebook login page"
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "button",
+              "label": "Search",
+              "coordinates": [
+                388,
+                361
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Search",
+          "coordinates": [
+            189,
+            54
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "query": "Open Twitter and search for trending topics",
+    "steps": [
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Search Box",
+              "coordinates": [
+                452,
+                263
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Search Box",
+          "coordinates": [
+            272,
+            173
+          ]
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Search Box",
+              "coordinates": [
+                91,
+                183
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "Search Box",
+          "text": "Twitter and search for trending topics"
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "button",
+              "label": "Search",
+              "coordinates": [
+                101,
+                320
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Search",
+          "coordinates": [
+            332,
+            234
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "query": "Open Twitter and search for trending topics",
+    "steps": [
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Search Box",
+              "coordinates": [
+                496,
+                375
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Search Box",
+          "coordinates": [
+            387,
+            314
+          ]
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Search Box",
+              "coordinates": [
+                174,
+                73
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "Search Box",
+          "text": "Twitter and search for trending topics"
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "button",
+              "label": "Search",
+              "coordinates": [
+                481,
+                109
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Search",
+          "coordinates": [
+            299,
+            70
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "query": "Open Twitter and search for trending topics",
+    "steps": [
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Search Box",
+              "coordinates": [
+                384,
+                126
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Search Box",
+          "coordinates": [
+            86,
+            108
+          ]
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Search Box",
+              "coordinates": [
+                492,
+                258
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "Search Box",
+          "text": "Twitter and search for trending topics"
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "button",
+              "label": "Search",
+              "coordinates": [
+                290,
+                439
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Search",
+          "coordinates": [
+            244,
+            445
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "query": "Go to LinkedIn and view job postings",
+    "steps": [
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Search Box",
+              "coordinates": [
+                97,
+                117
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Search Box",
+          "coordinates": [
+            314,
+            207
+          ]
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Search Box",
+              "coordinates": [
+                315,
+                140
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "Search Box",
+          "text": "to LinkedIn and view job postings"
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "button",
+              "label": "Search",
+              "coordinates": [
+                404,
+                166
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Search",
+          "coordinates": [
+            209,
+            64
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "query": "Go to LinkedIn and view job postings",
+    "steps": [
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Search Box",
+              "coordinates": [
+                281,
+                160
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Search Box",
+          "coordinates": [
+            160,
+            214
+          ]
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Search Box",
+              "coordinates": [
+                99,
+                50
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "Search Box",
+          "text": "to LinkedIn and view job postings"
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "button",
+              "label": "Search",
+              "coordinates": [
+                81,
+                418
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Search",
+          "coordinates": [
+            170,
+            308
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "query": "Go to LinkedIn and view job postings",
+    "steps": [
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Search Box",
+              "coordinates": [
+                234,
+                59
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Search Box",
+          "coordinates": [
+            471,
+            496
+          ]
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Search Box",
+              "coordinates": [
+                419,
+                336
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "Search Box",
+          "text": "to LinkedIn and view job postings"
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "button",
+              "label": "Search",
+              "coordinates": [
+                235,
+                201
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Search",
+          "coordinates": [
+            106,
+            220
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "query": "Open Google News and read the top story",
+    "steps": [
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Search Box",
+              "coordinates": [
+                248,
+                294
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Search Box",
+          "coordinates": [
+            493,
+            152
+          ]
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Search Box",
+              "coordinates": [
+                69,
+                275
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "Search Box",
+          "text": "Google News and read the top story"
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "button",
+              "label": "Search",
+              "coordinates": [
+                366,
+                145
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Search",
+          "coordinates": [
+            191,
+            279
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "query": "Open Google News and read the top story",
+    "steps": [
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Search Box",
+              "coordinates": [
+                338,
+                479
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Search Box",
+          "coordinates": [
+            362,
+            495
+          ]
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Search Box",
+              "coordinates": [
+                296,
+                313
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "Search Box",
+          "text": "Google News and read the top story"
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "button",
+              "label": "Search",
+              "coordinates": [
+                113,
+                92
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Search",
+          "coordinates": [
+            170,
+            95
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "query": "Open Google News and read the top story",
+    "steps": [
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Search Box",
+              "coordinates": [
+                360,
+                226
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Search Box",
+          "coordinates": [
+            251,
+            346
+          ]
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Search Box",
+              "coordinates": [
+                472,
+                474
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "Search Box",
+          "text": "Google News and read the top story"
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "button",
+              "label": "Search",
+              "coordinates": [
+                121,
+                86
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Search",
+          "coordinates": [
+            139,
+            350
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "query": "Search for best coffee shops near me",
+    "steps": [
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Search Box",
+              "coordinates": [
+                394,
+                343
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Search Box",
+          "coordinates": [
+            365,
+            55
+          ]
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Search Box",
+              "coordinates": [
+                150,
+                258
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "Search Box",
+          "text": "for best coffee shops near me"
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "button",
+              "label": "Search",
+              "coordinates": [
+                268,
+                454
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Search",
+          "coordinates": [
+            134,
+            494
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "query": "Search for best coffee shops near me",
+    "steps": [
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Search Box",
+              "coordinates": [
+                380,
+                140
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Search Box",
+          "coordinates": [
+            51,
+            453
+          ]
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Search Box",
+              "coordinates": [
+                351,
+                309
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "Search Box",
+          "text": "for best coffee shops near me"
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "button",
+              "label": "Search",
+              "coordinates": [
+                116,
+                146
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Search",
+          "coordinates": [
+            233,
+            210
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "query": "Search for best coffee shops near me",
+    "steps": [
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Search Box",
+              "coordinates": [
+                249,
+                122
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Search Box",
+          "coordinates": [
+            86,
+            109
+          ]
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Search Box",
+              "coordinates": [
+                427,
+                133
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "Search Box",
+          "text": "for best coffee shops near me"
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "button",
+              "label": "Search",
+              "coordinates": [
+                127,
+                397
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Search",
+          "coordinates": [
+            449,
+            158
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "query": "Search for weather in New York",
+    "steps": [
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Search Box",
+              "coordinates": [
+                189,
+                104
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Search Box",
+          "coordinates": [
+            97,
+            280
+          ]
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Search Box",
+              "coordinates": [
+                341,
+                307
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "Search Box",
+          "text": "for weather in New York"
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "button",
+              "label": "Search",
+              "coordinates": [
+                234,
+                96
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Search",
+          "coordinates": [
+            238,
+            394
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "query": "Search for weather in New York",
+    "steps": [
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Search Box",
+              "coordinates": [
+                165,
+                295
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Search Box",
+          "coordinates": [
+            385,
+            163
+          ]
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Search Box",
+              "coordinates": [
+                448,
+                125
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "Search Box",
+          "text": "for weather in New York"
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "button",
+              "label": "Search",
+              "coordinates": [
+                140,
+                476
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Search",
+          "coordinates": [
+            298,
+            471
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "query": "Search for weather in New York",
+    "steps": [
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Search Box",
+              "coordinates": [
+                75,
+                486
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Search Box",
+          "coordinates": [
+            75,
+            260
+          ]
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Search Box",
+              "coordinates": [
+                192,
+                310
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "Search Box",
+          "text": "for weather in New York"
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "button",
+              "label": "Search",
+              "coordinates": [
+                246,
+                286
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Search",
+          "coordinates": [
+            332,
+            459
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "query": "Search for latest tech news",
+    "steps": [
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Search Box",
+              "coordinates": [
+                114,
+                188
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Search Box",
+          "coordinates": [
+            180,
+            382
+          ]
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Search Box",
+              "coordinates": [
+                486,
+                117
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "Search Box",
+          "text": "for latest tech news"
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "button",
+              "label": "Search",
+              "coordinates": [
+                332,
+                246
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Search",
+          "coordinates": [
+            290,
+            345
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "query": "Search for latest tech news",
+    "steps": [
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Search Box",
+              "coordinates": [
+                446,
+                443
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Search Box",
+          "coordinates": [
+            204,
+            51
+          ]
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Search Box",
+              "coordinates": [
+                473,
+                146
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "Search Box",
+          "text": "for latest tech news"
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "button",
+              "label": "Search",
+              "coordinates": [
+                264,
+                460
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Search",
+          "coordinates": [
+            292,
+            310
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "query": "Search for latest tech news",
+    "steps": [
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Search Box",
+              "coordinates": [
+                170,
+                401
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Search Box",
+          "coordinates": [
+            241,
+            270
+          ]
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Search Box",
+              "coordinates": [
+                221,
+                207
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "Search Box",
+          "text": "for latest tech news"
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "button",
+              "label": "Search",
+              "coordinates": [
+                273,
+                115
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Search",
+          "coordinates": [
+            115,
+            122
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "query": "Search for GitHub Python repositories",
+    "steps": [
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Search Box",
+              "coordinates": [
+                123,
+                108
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Search Box",
+          "coordinates": [
+            434,
+            451
+          ]
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Search Box",
+              "coordinates": [
+                191,
+                367
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "Search Box",
+          "text": "for GitHub Python repositories"
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "button",
+              "label": "Search",
+              "coordinates": [
+                127,
+                462
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Search",
+          "coordinates": [
+            436,
+            348
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "query": "Search for GitHub Python repositories",
+    "steps": [
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Search Box",
+              "coordinates": [
+                437,
+                429
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Search Box",
+          "coordinates": [
+            463,
+            387
+          ]
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Search Box",
+              "coordinates": [
+                59,
+                65
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "Search Box",
+          "text": "for GitHub Python repositories"
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "button",
+              "label": "Search",
+              "coordinates": [
+                402,
+                407
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Search",
+          "coordinates": [
+            276,
+            81
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "query": "Search for GitHub Python repositories",
+    "steps": [
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Search Box",
+              "coordinates": [
+                77,
+                137
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Search Box",
+          "coordinates": [
+            301,
+            433
+          ]
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Search Box",
+              "coordinates": [
+                300,
+                342
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "Search Box",
+          "text": "for GitHub Python repositories"
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "button",
+              "label": "Search",
+              "coordinates": [
+                360,
+                177
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Search",
+          "coordinates": [
+            146,
+            147
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "query": "Search for tourist attractions in Paris",
+    "steps": [
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Search Box",
+              "coordinates": [
+                225,
+                236
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Search Box",
+          "coordinates": [
+            264,
+            181
+          ]
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Search Box",
+              "coordinates": [
+                183,
+                397
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "Search Box",
+          "text": "for tourist attractions in Paris"
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "button",
+              "label": "Search",
+              "coordinates": [
+                151,
+                255
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Search",
+          "coordinates": [
+            326,
+            312
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "query": "Search for tourist attractions in Paris",
+    "steps": [
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Search Box",
+              "coordinates": [
+                346,
+                351
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Search Box",
+          "coordinates": [
+            277,
+            366
+          ]
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Search Box",
+              "coordinates": [
+                89,
+                83
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "Search Box",
+          "text": "for tourist attractions in Paris"
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "button",
+              "label": "Search",
+              "coordinates": [
+                422,
+                250
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Search",
+          "coordinates": [
+            308,
+            250
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "query": "Search for tourist attractions in Paris",
+    "steps": [
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Search Box",
+              "coordinates": [
+                469,
+                168
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Search Box",
+          "coordinates": [
+            419,
+            387
+          ]
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Search Box",
+              "coordinates": [
+                89,
+                493
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "Search Box",
+          "text": "for tourist attractions in Paris"
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "button",
+              "label": "Search",
+              "coordinates": [
+                55,
+                202
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Search",
+          "coordinates": [
+            191,
+            422
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "query": "Open Gmail and compose a new email",
+    "steps": [
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "button",
+              "label": "Compose",
+              "coordinates": [
+                73,
+                133
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Compose",
+          "coordinates": [
+            225,
+            404
+          ]
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "To Field",
+              "coordinates": [
+                435,
+                350
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "To Field",
+          "text": "support@example.com"
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Subject Field",
+              "coordinates": [
+                269,
+                110
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "Subject Field",
+          "text": "Automation Test"
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Body Field",
+              "coordinates": [
+                194,
+                259
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "Body Field",
+          "text": "This is a test email generated by the automation agent."
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "button",
+              "label": "Send",
+              "coordinates": [
+                210,
+                50
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Send",
+          "coordinates": [
+            379,
+            391
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "query": "Open Gmail and compose a new email",
+    "steps": [
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "button",
+              "label": "Compose",
+              "coordinates": [
+                446,
+                316
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Compose",
+          "coordinates": [
+            318,
+            135
+          ]
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "To Field",
+              "coordinates": [
+                271,
+                302
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "To Field",
+          "text": "support@example.com"
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Subject Field",
+              "coordinates": [
+                72,
+                412
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "Subject Field",
+          "text": "Automation Test"
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Body Field",
+              "coordinates": [
+                411,
+                433
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "Body Field",
+          "text": "This is a test email generated by the automation agent."
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "button",
+              "label": "Send",
+              "coordinates": [
+                312,
+                104
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Send",
+          "coordinates": [
+            464,
+            179
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "query": "Open Gmail and compose a new email",
+    "steps": [
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "button",
+              "label": "Compose",
+              "coordinates": [
+                342,
+                308
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Compose",
+          "coordinates": [
+            280,
+            126
+          ]
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "To Field",
+              "coordinates": [
+                386,
+                362
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "To Field",
+          "text": "support@example.com"
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Subject Field",
+              "coordinates": [
+                71,
+                70
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "Subject Field",
+          "text": "Automation Test"
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Body Field",
+              "coordinates": [
+                301,
+                123
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "Body Field",
+          "text": "This is a test email generated by the automation agent."
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "button",
+              "label": "Send",
+              "coordinates": [
+                450,
+                64
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Send",
+          "coordinates": [
+            219,
+            102
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "query": "Search for emails from John Doe in Gmail",
+    "steps": [
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "button",
+              "label": "Compose",
+              "coordinates": [
+                368,
+                392
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Compose",
+          "coordinates": [
+            95,
+            460
+          ]
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "To Field",
+              "coordinates": [
+                397,
+                242
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "To Field",
+          "text": "support@example.com"
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Subject Field",
+              "coordinates": [
+                300,
+                446
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "Subject Field",
+          "text": "Automation Test"
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Body Field",
+              "coordinates": [
+                85,
+                267
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "Body Field",
+          "text": "This is a test email generated by the automation agent."
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "button",
+              "label": "Send",
+              "coordinates": [
+                146,
+                482
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Send",
+          "coordinates": [
+            272,
+            379
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "query": "Search for emails from John Doe in Gmail",
+    "steps": [
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "button",
+              "label": "Compose",
+              "coordinates": [
+                285,
+                181
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Compose",
+          "coordinates": [
+            458,
+            386
+          ]
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "To Field",
+              "coordinates": [
+                449,
+                476
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "To Field",
+          "text": "support@example.com"
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Subject Field",
+              "coordinates": [
+                261,
+                479
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "Subject Field",
+          "text": "Automation Test"
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Body Field",
+              "coordinates": [
+                350,
+                141
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "Body Field",
+          "text": "This is a test email generated by the automation agent."
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "button",
+              "label": "Send",
+              "coordinates": [
+                477,
+                400
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Send",
+          "coordinates": [
+            98,
+            172
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "query": "Search for emails from John Doe in Gmail",
+    "steps": [
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "button",
+              "label": "Compose",
+              "coordinates": [
+                138,
+                207
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Compose",
+          "coordinates": [
+            438,
+            197
+          ]
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "To Field",
+              "coordinates": [
+                486,
+                293
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "To Field",
+          "text": "support@example.com"
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Subject Field",
+              "coordinates": [
+                463,
+                226
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "Subject Field",
+          "text": "Automation Test"
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Body Field",
+              "coordinates": [
+                170,
+                300
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "Body Field",
+          "text": "This is a test email generated by the automation agent."
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "button",
+              "label": "Send",
+              "coordinates": [
+                234,
+                190
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Send",
+          "coordinates": [
+            173,
+            318
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "query": "Open Outlook and check inbox",
+    "steps": [
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "button",
+              "label": "Compose",
+              "coordinates": [
+                102,
+                71
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Compose",
+          "coordinates": [
+            477,
+            430
+          ]
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "To Field",
+              "coordinates": [
+                57,
+                418
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "To Field",
+          "text": "support@example.com"
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Subject Field",
+              "coordinates": [
+                134,
+                479
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "Subject Field",
+          "text": "Automation Test"
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Body Field",
+              "coordinates": [
+                57,
+                237
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "Body Field",
+          "text": "This is a test email generated by the automation agent."
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "button",
+              "label": "Send",
+              "coordinates": [
+                279,
+                446
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Send",
+          "coordinates": [
+            113,
+            476
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "query": "Open Outlook and check inbox",
+    "steps": [
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "button",
+              "label": "Compose",
+              "coordinates": [
+                226,
+                254
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Compose",
+          "coordinates": [
+            282,
+            132
+          ]
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "To Field",
+              "coordinates": [
+                50,
+                428
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "To Field",
+          "text": "support@example.com"
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Subject Field",
+              "coordinates": [
+                112,
+                410
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "Subject Field",
+          "text": "Automation Test"
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Body Field",
+              "coordinates": [
+                307,
+                245
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "Body Field",
+          "text": "This is a test email generated by the automation agent."
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "button",
+              "label": "Send",
+              "coordinates": [
+                304,
+                310
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Send",
+          "coordinates": [
+            169,
+            405
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "query": "Open Outlook and check inbox",
+    "steps": [
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "button",
+              "label": "Compose",
+              "coordinates": [
+                445,
+                467
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Compose",
+          "coordinates": [
+            294,
+            495
+          ]
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "To Field",
+              "coordinates": [
+                483,
+                375
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "To Field",
+          "text": "support@example.com"
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Subject Field",
+              "coordinates": [
+                51,
+                467
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "Subject Field",
+          "text": "Automation Test"
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Body Field",
+              "coordinates": [
+                302,
+                126
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "Body Field",
+          "text": "This is a test email generated by the automation agent."
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "button",
+              "label": "Send",
+              "coordinates": [
+                110,
+                198
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Send",
+          "coordinates": [
+            273,
+            212
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "query": "Search for unread emails in Gmail",
+    "steps": [
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "button",
+              "label": "Compose",
+              "coordinates": [
+                192,
+                291
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Compose",
+          "coordinates": [
+            377,
+            488
+          ]
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "To Field",
+              "coordinates": [
+                483,
+                195
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "To Field",
+          "text": "support@example.com"
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Subject Field",
+              "coordinates": [
+                229,
+                485
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "Subject Field",
+          "text": "Automation Test"
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Body Field",
+              "coordinates": [
+                127,
+                461
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "Body Field",
+          "text": "This is a test email generated by the automation agent."
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "button",
+              "label": "Send",
+              "coordinates": [
+                277,
+                113
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Send",
+          "coordinates": [
+            412,
+            114
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "query": "Search for unread emails in Gmail",
+    "steps": [
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "button",
+              "label": "Compose",
+              "coordinates": [
+                135,
+                349
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Compose",
+          "coordinates": [
+            420,
+            88
+          ]
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "To Field",
+              "coordinates": [
+                335,
+                434
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "To Field",
+          "text": "support@example.com"
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Subject Field",
+              "coordinates": [
+                284,
+                166
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "Subject Field",
+          "text": "Automation Test"
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Body Field",
+              "coordinates": [
+                163,
+                61
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "Body Field",
+          "text": "This is a test email generated by the automation agent."
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "button",
+              "label": "Send",
+              "coordinates": [
+                250,
+                217
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Send",
+          "coordinates": [
+            326,
+            404
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "query": "Search for unread emails in Gmail",
+    "steps": [
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "button",
+              "label": "Compose",
+              "coordinates": [
+                61,
+                423
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Compose",
+          "coordinates": [
+            273,
+            388
+          ]
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "To Field",
+              "coordinates": [
+                302,
+                378
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "To Field",
+          "text": "support@example.com"
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Subject Field",
+              "coordinates": [
+                384,
+                226
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "Subject Field",
+          "text": "Automation Test"
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Body Field",
+              "coordinates": [
+                147,
+                302
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "Body Field",
+          "text": "This is a test email generated by the automation agent."
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "button",
+              "label": "Send",
+              "coordinates": [
+                140,
+                128
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Send",
+          "coordinates": [
+            483,
+            236
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "query": "Compose and send an email to support@example.com",
+    "steps": [
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "button",
+              "label": "Compose",
+              "coordinates": [
+                399,
+                101
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Compose",
+          "coordinates": [
+            161,
+            450
+          ]
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "To Field",
+              "coordinates": [
+                84,
+                320
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "To Field",
+          "text": "support@example.com"
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Subject Field",
+              "coordinates": [
+                96,
+                212
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "Subject Field",
+          "text": "Automation Test"
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Body Field",
+              "coordinates": [
+                286,
+                326
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "Body Field",
+          "text": "This is a test email generated by the automation agent."
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "button",
+              "label": "Send",
+              "coordinates": [
+                460,
+                496
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Send",
+          "coordinates": [
+            155,
+            336
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "query": "Compose and send an email to support@example.com",
+    "steps": [
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "button",
+              "label": "Compose",
+              "coordinates": [
+                121,
+                196
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Compose",
+          "coordinates": [
+            355,
+            491
+          ]
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "To Field",
+              "coordinates": [
+                312,
+                256
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "To Field",
+          "text": "support@example.com"
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Subject Field",
+              "coordinates": [
+                224,
+                276
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "Subject Field",
+          "text": "Automation Test"
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Body Field",
+              "coordinates": [
+                350,
+                389
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "Body Field",
+          "text": "This is a test email generated by the automation agent."
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "button",
+              "label": "Send",
+              "coordinates": [
+                88,
+                442
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Send",
+          "coordinates": [
+            161,
+            103
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "query": "Compose and send an email to support@example.com",
+    "steps": [
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "button",
+              "label": "Compose",
+              "coordinates": [
+                463,
+                304
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Compose",
+          "coordinates": [
+            92,
+            492
+          ]
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "To Field",
+              "coordinates": [
+                166,
+                293
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "To Field",
+          "text": "support@example.com"
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Subject Field",
+              "coordinates": [
+                179,
+                492
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "Subject Field",
+          "text": "Automation Test"
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "input",
+              "label": "Body Field",
+              "coordinates": [
+                297,
+                418
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "type",
+          "element": "Body Field",
+          "text": "This is a test email generated by the automation agent."
+        }
+      },
+      {
+        "ui_tree": {
+          "elements": [
+            {
+              "type": "button",
+              "label": "Send",
+              "coordinates": [
+                112,
+                472
+              ]
+            }
+          ]
+        },
+        "action": {
+          "type": "click",
+          "element": "Send",
+          "coordinates": [
+            98,
+            165
+          ]
+        }
+      }
+    ]
+  }
+]

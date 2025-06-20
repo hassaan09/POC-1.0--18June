@@ -48,7 +48,9 @@ class LLMAgent:
             'temperature': 0.1
         }
         
+       
         response = requests.post(Config.OPENAI_API_URL, headers=headers, json=data)
+        self.logger.log(f"LLM API raw response: {json.dumps(response, indent=2)}")
         response.raise_for_status()
         
         return response.json()['choices'][0]['message']['content']

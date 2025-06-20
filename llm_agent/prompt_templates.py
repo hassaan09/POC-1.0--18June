@@ -35,5 +35,16 @@ class PromptTemplates:
             '  "additional_input": "[If typing, the input text]"\n'
             "}"
         )
+
+        prompt_parts.append(
+            "Suggest the next action in JSON. "
+            "The 'action_type' MUST be one of 'click', 'type', 'wait', 'navigate', or 'finish'. "
+            "Do NOT combine action types (e.g., 'click/type' is invalid)."
+            "\n{\n"
+            '  "action_type": "click" | "type" | "wait" | "navigate" | "finish",\n' 
+            '  "target_element": "[Element label/description]",\n'
+            '  "additional_input": "[If typing or navigating, the input text/URL]"\n' 
+            "}"
+        )
         
         return "\n\n".join(prompt_parts)

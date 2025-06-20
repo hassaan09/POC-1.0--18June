@@ -129,6 +129,7 @@ class TaskRetriever:
                         'steps': self.dataset[idx]['steps'],
                         'similarity': float(similarities[idx])
                     })
+                    self.logger.log(f"Retrieved similar task: {self.dataset[idx]['query']} with similarity {similarities[idx]:.4f}")
                     
             return results
             
