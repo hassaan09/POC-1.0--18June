@@ -1,52 +1,21 @@
-# Python
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
 .Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
-
-# Virtual environment
-Venv/
-venv/
 env/
+venv/
 ENV/
-
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# Environment variables
+env.bak/
+venv.bak/
 .env
-.env.local
-
-# Screenshots and logs
-screenshots/
-logs/
+.venv
+pip-log.txt
+pip-delete-this-directory.txt
+.coverage
+htmlcov/
+.pytest_cache/
+.DS_Store
 *.log
-
-# Audio files
-*.wav
-*.mp3
-*.m4a
-
-# Chrome data
-chrome_data/
-*.tmp
+data/screenshots/
+data/temp/
