@@ -10,6 +10,8 @@ from webdriver_manager.chrome import ChromeDriverManager
 import time
 import os
 from app.config import Config
+import glob
+import utils.logger as Logger
 
 class BrowserController:
     def __init__(self):
@@ -22,6 +24,13 @@ class BrowserController:
         """
         Initialize Chrome driver with optimal settings
         """
+        print("[INFO] BrowserController: Driver initialized with waits - Implicit:", Config.IMPLICIT_WAIT, ", Explicit:", Config.EXPLICIT_WAIT)
+
+
+        if self.driver: 
+            self.logger.log(" BrowserController: Driver already initialized.", level='debug')
+            return
+
         chrome_options = Options()
         chrome_options.add_argument("--disable-blink-features=AutomationControlled")
         chrome_options.add_experimental_option("excludeSwitches", ["enable-automation"])
@@ -46,7 +55,6 @@ class BrowserController:
         Open Gmail in browser
         """
         self.driver.get("https://gmail.com")
-        time.sleep(2)
         return self.take_screenshot("gmail_opened")
     
     def open_google(self):
@@ -54,7 +62,6 @@ class BrowserController:
         Open Google search
         """
         self.driver.get("https://google.com")
-        time.sleep(2)
         return self.take_screenshot("google_opened")
     
     def open_url(self, url: str):
@@ -65,7 +72,6 @@ class BrowserController:
             url = 'https://' + url
         
         self.driver.get(url)
-        time.sleep(2)
         return self.take_screenshot("url_opened")
     
     def find_and_click(self, element_text: str = None, element_id: str = None, 
@@ -77,13 +83,17 @@ class BrowserController:
             element = None
             
             if element_xpath:
+                print(f"[DEBUG] Trying to click element with XPATH: {element_xpath}")
                 element = self.wait.until(EC.element_to_be_clickable((By.XPATH, element_xpath)))
             elif element_id:
+                print(f"[DEBUG] Trying to click element with ID: {element_id}")
                 element = self.wait.until(EC.element_to_be_clickable((By.ID, element_id)))
             elif element_class:
+                print(f"[DEBUG] Trying to click element with CLASS: {element_class}")
                 element = self.wait.until(EC.element_to_be_clickable((By.CLASS_NAME, element_class)))
             elif element_text:
                 # Try to find by text content
+                print(f"[DEBUG] Trying to click element with TEXT: {element_text}")
                 xpath = f"//*[contains(text(), '{element_text}')]"
                 element = self.wait.until(EC.element_to_be_clickable((By.XPATH, xpath)))
             
@@ -107,12 +117,16 @@ class BrowserController:
             element = None
             
             if element_xpath:
+                print(f"[DEBUG] Trying to type in element with XPATH: {element_xpath}")
                 element = self.wait.until(EC.presence_of_element_located((By.XPATH, element_xpath)))
             elif element_id:
+                print(f"[DEBUG] Trying to type in element with ID: {element_id}")
                 element = self.wait.until(EC.presence_of_element_located((By.ID, element_id)))
             elif element_class:
+                print(f"[DEBUG] Trying to type in element with CLASS: {element_class}")
                 element = self.wait.until(EC.presence_of_element_located((By.CLASS_NAME, element_class)))
             elif element_name:
+                print(f"[DEBUG] Trying to type in element with NAME: {element_name}")
                 element = self.wait.until(EC.presence_of_element_located((By.NAME, element_name)))
             
             if element:

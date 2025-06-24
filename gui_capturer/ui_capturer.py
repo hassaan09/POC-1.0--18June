@@ -8,13 +8,13 @@ from utils.logger import Logger
 # Removed glob as it's now handled by main.py
 
 class UICapturer:
-    # 💡 CHANGED: Constructor now accepts a driver instance
+    #  CHANGED: Constructor now accepts a driver instance
     def __init__(self, driver_instance):
         self.logger = Logger()
-        self.driver = driver_instance # 💡 ASSIGN: Use the provided driver instance
-        self.logger.log("💡 UICapturer initialized with shared driver.")
+        self.driver = driver_instance #  ASSIGN: Use the provided driver instance
+        self.logger.log(" UICapturer initialized with shared driver.")
 
-    # 💡 REMOVED: get_driver method, as the driver is now set externally
+    #  REMOVED: get_driver method, as the driver is now set externally
     # def get_driver(self):
     #    ... (this logic is now in main.py)
 
@@ -23,7 +23,7 @@ class UICapturer:
         """Capture screenshot and UI tree using the shared driver"""
         # Ensure driver is available (it should be, if correctly passed from main)
         if not self.driver:
-            self.logger.log("💡 UICapturer: Driver not set. Cannot capture state.")
+            self.logger.log(" UICapturer: Driver not set. Cannot capture state.")
             return None, None
 
         # Take screenshot
@@ -32,7 +32,7 @@ class UICapturer:
             f"step{step_number}.png"
         )
         self.driver.save_screenshot(screenshot_path)
-        self.logger.log(f"💡 Screenshot saved to: {screenshot_path}")
+        self.logger.log(f" Screenshot saved to: {screenshot_path}")
 
         # Build UI tree
         ui_tree = self._build_ui_tree(self.driver)
@@ -48,15 +48,15 @@ class UICapturer:
             selectors = [
                 "input", "button", "a", "select", "textarea",
                 "[role='button']", "[role='link']", "[role='textbox']",
-                "[tabindex]:not([tabindex='-1'])", # 💡 ADDED: Elements with tabindex
-                "div[onclick]", "span[onclick]" # 💡 ADDED: Common clickable divs/spans
+                "[tabindex]:not([tabindex='-1'])", #  ADDED: Elements with tabindex
+                "div[onclick]", "span[onclick]" #  ADDED: Common clickable divs/spans
             ]
 
             for selector in selectors:
                 web_elements = driver.find_elements(By.CSS_SELECTOR, selector)
-                # 💡 IMPROVED: Filter for visible/enabled elements earlier
+                #  IMPROVED: Filter for visible/enabled elements earlier
                 visible_elements = [el for el in web_elements if el.is_displayed() and el.is_enabled()]
-                for element in visible_elements[:Config.MAX_UI_ELEMENTS_TO_CAPTURE]: # 💡 Use a config for limit
+                for element in visible_elements[:Config.MAX_UI_ELEMENTS_TO_CAPTURE]: #  Use a config for limit
                     try:
                         rect = element.rect
                         # Basic filtering for tiny or off-screen elements that might be invisible
@@ -71,13 +71,13 @@ class UICapturer:
                             }
                             elements.append(element_data)
                     except Exception as inner_e:
-                        self.logger.log(f"💡 UICapturer: Error processing element for UI tree: {inner_e}")
+                        self.logger.log(f" UICapturer: Error processing element for UI tree: {inner_e}")
                         continue
 
         except Exception as e:
             self.logger.log(f"Error building UI tree: {str(e)}")
 
-        self.logger.log(f"💡 Captured {len(elements)} interactive UI elements.")
+        self.logger.log(f" Captured {len(elements)} interactive UI elements.")
         return {"elements": elements}
 
     def _get_element_type(self, element):
@@ -101,9 +101,9 @@ class UICapturer:
     def _get_element_label(self, element):
         """Get element label or identifier"""
         # Try various attributes for label
-        for attr in ['aria-label', 'placeholder', 'title', 'alt', 'name', 'value']: # 💡 ADDED 'value'
+        for attr in ['aria-label', 'placeholder', 'title', 'alt', 'name', 'value']: #  ADDED 'value'
             label = element.get_attribute(attr)
-            if label and label.strip(): # 💡 CHECK for non-empty string
+            if label and label.strip(): #  CHECK for non-empty string
                 return label.strip()[:50]
 
         # Try text content

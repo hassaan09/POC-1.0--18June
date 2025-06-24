@@ -130,12 +130,12 @@ class AutomationAgent:
                 final_screenshot = screenshot
                 
                 # Wait between steps
-                time.sleep(1)
+                time.sleep(0.2)
                 
                 # Handle manual input scenarios
                 if not success and "manual" in message.lower():
                     print(f"Manual input required for step: {step}")
-                    self.browser_controller.wait_for_manual_input(30)
+                    self.browser_controller.wait_for_manual_input(10)
                 
             except Exception as e:
                 results.append({

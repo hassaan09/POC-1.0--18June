@@ -14,16 +14,16 @@ import glob
 
 
 class ActionExecutor:
-    # 💡 CHANGED: Constructor now accepts a driver instance
+    # CHANGED: Constructor now accepts a driver instance
     def __init__(self, driver_instance):
         self.logger = Logger()
-        self.driver = driver_instance # 💡 ASSIGN: Use the provided driver instance
-        self.wait = WebDriverWait(self.driver, Config.EXPLICIT_WAIT) # 💡 INITIALIZE: Wait object here
-        self.actions = ActionChains(self.driver) # 💡 INITIALIZE: ActionChains here
-        self.logger.log("💡 ActionExecutor initialized with shared driver.")
+        self.driver = driver_instance # ASSIGN: Use the provided driver instance
+        self.wait = WebDriverWait(self.driver, Config.EXPLICIT_WAIT) # INITIALIZE: Wait object here
+        self.actions = ActionChains(self.driver) # INITIALIZE: ActionChains here
+        self.logger.log("ActionExecutor initialized with shared driver.")
 
 
-    # 💡 REMOVED: initialize_browser method, as browser is now initialized externally
+    # REMOVED: initialize_browser method, as browser is now initialized externally
     # def initialize_browser(self):
     #    ... (this logic is now in main.py)
 
@@ -44,6 +44,9 @@ class ActionExecutor:
                 return self._execute_navigate(additional_input)
             elif action_type == 'wait':
                 return self._execute_wait()
+            elif action_type == 'finish':
+                self.logger.log("Task completed successfully.")
+                return True
             else:
                 self.logger.log(f"Unknown action type: {action_type}")
                 return False
@@ -58,19 +61,19 @@ class ActionExecutor:
         if element:
             self.logger.log(f"Attempting to click: {target_element} at coordinates {element.location['x']},{element.location['y']}")
             try:
-                # 💡 Consider using ActionChains for more reliable clicks, especially if element is obscured
+                # Consider using ActionChains for more reliable clicks, especially if element is obscured
                 self.actions.move_to_element(element).click().perform()
                 # element.click() # Original direct click
                 self.logger.log(f"Clicked: {target_element}")
                 return True
             except Exception as click_error:
-                self.logger.log(f"💡 Failed direct click for {target_element}: {click_error}. Trying JS click.")
+                self.logger.log(f"Failed direct click for {target_element}: {click_error}. Trying JS click.")
                 try:
                     self.driver.execute_script("arguments[0].click();", element)
                     self.logger.log(f"Clicked (JS): {target_element}")
                     return True
                 except Exception as js_click_error:
-                    self.logger.log(f"💡 Failed JS click for {target_element}: {js_click_error}")
+                    self.logger.log(f"Failed JS click for {target_element}: {js_click_error}")
                     return False
         return False
 
@@ -102,7 +105,7 @@ class ActionExecutor:
         if not target_description:
             return None
 
-        # 💡 ADDED: Lowercase target_description for case-insensitive matching in some strategies
+        # ADDED: Lowercase target_description for case-insensitive matching in some strategies
         target_description_lower = target_description.lower()
 
         strategies = [
@@ -134,16 +137,16 @@ class ActionExecutor:
 
         for strategy in strategies:
             try:
-                # 💡 Use self.wait for finding elements to ensure they are present/visible
+                # Use self.wait for finding elements to ensure they are present/visible
                 element = self.wait.until(EC.presence_of_element_located(strategy))
                 if element.is_displayed() and element.is_enabled():
-                    self.logger.log(f"💡 Found element by strategy {strategy}: {element.tag_name} - {self._get_element_label_for_logging(element)}")
+                    self.logger.log(f"Found element by strategy {strategy}: {element.tag_name} - {self._get_element_label_for_logging(element)}")
                     return element
             except Exception as e:
-                # self.logger.log(f"💡 ActionExecutor: No element found with strategy {strategy}: {e}") # Too verbose
+                # self.logger.log(f"ActionExecutor: No element found with strategy {strategy}: {e}") # Too verbose
                 continue
 
-        self.logger.log(f"💡 ActionExecutor: No element found for target: {target_description}")
+        self.logger.log(f"ActionExecutor: No element found for target: {target_description}")
         return None
 
     def _get_element_label_for_logging(self, element):
@@ -157,6 +160,6 @@ class ActionExecutor:
             return f"text='{element.text[:50]}'"
         return f"tag='{element.tag_name}'"
 
-    # 💡 REMOVED: cleanup method, as the shared driver is cleaned up by main.py
+    # REMOVED: cleanup method, as the shared driver is cleaned up by main.py
     # def cleanup(self):
     #    ...

@@ -7,19 +7,19 @@ from llm_agent.agent import LLMAgent
 from executor.action_executor import ActionExecutor
 from utils.logger import Logger
 from ui.ui_server import UIServer
-from selenium import webdriver # 💡 ADDED: Import webdriver for initialization
-from selenium.webdriver.chrome.service import Service # 💡 ADDED
-from selenium.webdriver.chrome.options import Options # 💡 ADDED
-from webdriver_manager.chrome import ChromeDriverManager # 💡 ADDED
-import os # 💡 ADDED
-import glob # 💡 ADDED
+from selenium import webdriver # ADDED: Import webdriver for initialization
+from selenium.webdriver.chrome.service import Service # ADDED
+from selenium.webdriver.chrome.options import Options # ADDED
+from webdriver_manager.chrome import ChromeDriverManager # ADDED
+import os # ADDED
+import glob # ADDED
 
 
 class GUIAutomationAgent:
     def __init__(self):
         Config.create_directories()
         self.logger = Logger()
-        self.driver = None # 💡 ADDED: Centralized WebDriver instance
+        self.driver = None # ADDED: Centralized WebDriver instance
         self.ui_capturer = None # Will be initialized with shared driver
         self.retriever = TaskRetriever()
         self.llm_agent = LLMAgent()
@@ -29,7 +29,7 @@ class GUIAutomationAgent:
     def _initialize_shared_browser(self):
         """Initializes and returns a single shared Chrome browser instance."""
         if self.driver:
-            self.logger.log("💡 Browser already initialized, skipping.")
+            self.logger.log("Browser already initialized, skipping.")
             return self.driver
 
         chrome_options = Options()
@@ -46,14 +46,14 @@ class GUIAutomationAgent:
 
         os.makedirs(Config.SCREENSHOTS_DIR, exist_ok=True)
 
-        # --- 💡 CRITICAL FIX START: Robust ChromeDriver Path Finding (Copied from Executor) ---
-        self.logger.log("💡 Main Agent: Attempting to install/locate ChromeDriver...")
+        # --- CRITICAL FIX START: Robust ChromeDriver Path Finding (Copied from Executor) ---
+        self.logger.log("Main Agent: Attempting to install/locate ChromeDriver...")
         driver_candidate_path = ChromeDriverManager().install()
 
         actual_driver_path = None
 
         if not driver_candidate_path.lower().endswith('.exe'):
-            self.logger.log(f"💡 Main Agent: WebDriverManager returned an unexpected path: {driver_candidate_path}")
+            self.logger.log(f"Main Agent: WebDriverManager returned an unexpected path: {driver_candidate_path}")
 
             found_exe = glob.glob(os.path.join(driver_candidate_path, 'chromedriver.exe'))
 
@@ -63,19 +63,19 @@ class GUIAutomationAgent:
 
             if found_exe:
                 actual_driver_path = found_exe[0]
-                self.logger.log(f"💡 Main Agent: Corrected ChromeDriver path to: {actual_driver_path}")
+                self.logger.log(f"Main Agent: Corrected ChromeDriver path to: {actual_driver_path}")
             else:
                 raise FileNotFoundError(
-                    f"💡 Main Agent: Could not find 'chromedriver.exe' after webdriver_manager install. "
+                    f"Main Agent: Could not find 'chromedriver.exe' after webdriver_manager install. "
                     f"WebDriverManager returned: {driver_candidate_path}"
                 )
         else:
             actual_driver_path = driver_candidate_path
-            self.logger.log(f"💡 Main Agent: WebDriverManager returned a direct path to chromedriver.exe: {actual_driver_path}")
+            self.logger.log(f"Main Agent: WebDriverManager returned a direct path to chromedriver.exe: {actual_driver_path}")
 
-        self.logger.log(f"💡 Main Agent: Final ChromeDriver path used: {actual_driver_path}")
+        self.logger.log(f"Main Agent: Final ChromeDriver path used: {actual_driver_path}")
         service = Service(executable_path=actual_driver_path)
-        # --- 💡 CRITICAL FIX END ---
+        # --- CRITICAL FIX END ---
 
         self.driver = webdriver.Chrome(service=service, options=chrome_options)
         self.driver.implicitly_wait(Config.IMPLICIT_WAIT)
@@ -84,7 +84,7 @@ class GUIAutomationAgent:
         self.driver.execute_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
 
         self.driver.get("https://www.google.com") # Start with Google homepage
-        self.logger.log("💡 Shared browser initialized and navigated to Google.")
+        self.logger.log("Shared browser initialized and navigated to Google.")
         return self.driver
 
     def run_automation(self, instruction):
@@ -93,7 +93,7 @@ class GUIAutomationAgent:
         self.step_count = 0
 
         try:
-            # 💡 INITIALIZE THE SINGLE BROWSER INSTANCE AND PASS IT
+            # INITIALIZE THE SINGLE BROWSER INSTANCE AND PASS IT
             shared_driver = self._initialize_shared_browser()
             self.ui_capturer = UICapturer(shared_driver) # Pass driver to UICapturer
             self.executor = ActionExecutor(shared_driver) # Pass driver to ActionExecutor
@@ -129,16 +129,16 @@ class GUIAutomationAgent:
                     self.logger.log("Action execution failed")
                     break
 
-                time.sleep(Config.ACTION_DELAY) # 💡 CHANGED: Use a config value for delay
+                time.sleep(Config.ACTION_DELAY) # CHANGED: Use a config value for delay
                                               # You'll need to add ACTION_DELAY to your config.py
                                               # e.g., ACTION_DELAY = 2
 
         except Exception as e:
             self.logger.log(f"Error in automation: {str(e)}")
         finally:
-            # 💡 CLEANUP THE SINGLE SHARED BROWSER INSTANCE
+            # CLEANUP THE SINGLE SHARED BROWSER INSTANCE
             if self.driver:
-                self.logger.log("💡 Cleaning up shared browser.")
+                self.logger.log("Cleaning up shared browser.")
                 self.driver.quit()
                 self.driver = None # Reset the driver for potential new runs
             # No need to call cleanup on executor/capturer as they don't own the driver anymore.

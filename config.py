@@ -6,12 +6,12 @@ class Config:
     MAX_UI_ELEMENTS_TO_CAPTURE = 20 # Limit the number of elements in UI tree for LLM context
 
     # API Configuration
-    OPENAI_API_KEY = 'Open API key here'
+    OPENAI_API_KEY = ''
     OPENAI_API_URL = 'https://api.openai.com/v1/chat/completions'
     
     # Selenium Configuration
-    IMPLICIT_WAIT = 10
-    EXPLICIT_WAIT = 20
+    IMPLICIT_WAIT = 5
+    EXPLICIT_WAIT = 10
     CHROME_HEADLESS = False
     
     # Retrieval Configuration

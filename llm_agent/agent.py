@@ -3,6 +3,7 @@ import requests
 from config import Config
 from llm_agent.prompt_templates import PromptTemplates
 from utils.logger import Logger
+import traceback
 
 class LLMAgent:
     def __init__(self):
@@ -22,6 +23,8 @@ class LLMAgent:
             return action_suggestion
             
         except Exception as e:
+            # tb = traceback.format_exc()
+            # self.logger.log(f"Error getting LLM suggestion: {str(e)}\nTraceback: {tb}")
             self.logger.log(f"Error getting LLM suggestion: {str(e)}")
             return {"action_type": "wait", "target_element": "unknown"}
             
@@ -50,7 +53,12 @@ class LLMAgent:
         
        
         response = requests.post(Config.OPENAI_API_URL, headers=headers, json=data)
-        self.logger.log(f"LLM API raw response: {json.dumps(response, indent=2)}")
+        try:
+            # self.logger.log(f"LLM API raw response: {response.text}")
+            result = response.json()
+        except Exception as e:
+            self.logger.log(f"Error decoding LLM response JSON: {str(e)}")
+            raise
         response.raise_for_status()
         
         return response.json()['choices'][0]['message']['content']

@@ -26,15 +26,6 @@ class PromptTemplates:
                 prompt_parts.append(f"Example {i+1}:")
                 prompt_parts.append(f"Query: {example['query']}")
                 prompt_parts.append(f"Steps: {json.dumps(example['steps'][:2], indent=None)}")
-        
-        prompt_parts.append(
-            "Suggest the next action in JSON:\n"
-            "{\n"
-            '  "action_type": "click/type/wait/navigate/finish",\n'
-            '  "target_element": "[Element label/description]",\n'
-            '  "additional_input": "[If typing, the input text]"\n'
-            "}"
-        )
 
         prompt_parts.append(
             "Suggest the next action in JSON. "
