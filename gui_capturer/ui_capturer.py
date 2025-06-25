@@ -106,10 +106,7 @@ class UICapturer:
             if label and label.strip(): #  CHECK for non-empty string
                 return label.strip()[:50]
 
-        # Try text content
-        text = element.text.strip()
-        if text:
-            return text[:50]
+       
 
         # Fallback to tag and type
         return f"{element.tag_name}_{element.get_attribute('type') or 'unknown'}"

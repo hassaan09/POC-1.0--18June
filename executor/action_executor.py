@@ -60,22 +60,34 @@ class ActionExecutor:
         element = self._find_element(target_element)
         if element:
             self.logger.log(f"Attempting to click: {target_element} at coordinates {element.location['x']},{element.location['y']}")
+            self.driver.execute_script("arguments[0].style.border='3px solid lime; background-color: yellow;'", element) # custom added 25 June
             try:
-                # Consider using ActionChains for more reliable clicks, especially if element is obscured
+                # Try using ActionChains for better reliability
                 self.actions.move_to_element(element).click().perform()
-                # element.click() # Original direct click
                 self.logger.log(f"Clicked: {target_element}")
-                return True
             except Exception as click_error:
                 self.logger.log(f"Failed direct click for {target_element}: {click_error}. Trying JS click.")
                 try:
                     self.driver.execute_script("arguments[0].click();", element)
                     self.logger.log(f"Clicked (JS): {target_element}")
-                    return True
                 except Exception as js_click_error:
                     self.logger.log(f"Failed JS click for {target_element}: {js_click_error}")
                     return False
+
+            #  Post-click: Wait for Google search result page (if applicable)
+            try:
+                self.logger.log("Waiting for search result container to load...")
+                self.wait.until(EC.presence_of_element_located((By.ID, "search")))
+                self.logger.log(" Search results page detected.")
+            except Exception as wait_error:
+                self.logger.log(f" Search results container not detected: {wait_error}")
+
+            return True
+
         return False
+
+        
+
 
     def _execute_type(self, target_element, text):
         """Execute type action"""
@@ -100,12 +112,14 @@ class ActionExecutor:
         self.logger.log("Manual intervention required")
         return True
 
-    def _find_element(self, target_description):
+    # def _find_element(self, target_description):
         """Find element by various strategies"""
-        if not target_description:
+        if not target_description or not target_description.strip():
+            self.logger.log("Empty or invalid target description — skipping element search.")
             return None
 
         # ADDED: Lowercase target_description for case-insensitive matching in some strategies
+        target_description = target_description.strip() # Added custom 26 June
         target_description_lower = target_description.lower()
 
         strategies = [
@@ -148,6 +162,122 @@ class ActionExecutor:
 
         self.logger.log(f"ActionExecutor: No element found for target: {target_description}")
         return None
+
+    
+        """Find element by various strategies"""
+        if not target_description or not target_description.strip():
+            self.logger.log(" Empty or invalid target description — skipping element search.")
+            return None
+
+        target_description = target_description.strip()
+        target_description_lower = target_description.lower()
+
+        strategies = [
+            # By exact placeholder
+            (By.CSS_SELECTOR, f"input[placeholder='{target_description}']"),
+            (By.CSS_SELECTOR, f"input[placeholder*='{target_description}']"),
+
+            # By aria-label
+            (By.CSS_SELECTOR, f"[aria-label='{target_description}']"),
+            (By.CSS_SELECTOR, f"[aria-label*='{target_description}']"),
+
+            # By visible text (case-insensitive, normalized)
+            (By.XPATH, f"//*[contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), '{target_description_lower}')]"),
+            (By.XPATH, f"//*[normalize-space(.)='{target_description}']"),
+
+            # By name, id, title, value
+            (By.NAME, target_description),
+            (By.ID, target_description),
+            (By.CSS_SELECTOR, f"[title*='{target_description}']"),
+            (By.CSS_SELECTOR, f"input[value*='{target_description}']"),
+
+            # Common input patterns
+            (By.CSS_SELECTOR, "input[type='search']"),
+            (By.CSS_SELECTOR, "input[name='q']"),
+            (By.CSS_SELECTOR, "input[name='search']"),
+
+            #  Final fallback: <a> link text match (like 'Sign into Gmail')
+            (By.XPATH, f"//a[contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), '{target_description_lower}')]")
+        ]
+
+        for strategy in strategies:
+            try:
+                element = self.wait.until(EC.presence_of_element_located(strategy))
+                if element.is_displayed() and element.is_enabled():
+                    self.logger.log(f" Found element by strategy {strategy}: {element.tag_name} - {self._get_element_label_for_logging(element)}")
+                    return element
+            except Exception:
+                continue
+
+        self.logger.log(f" No element found for target: '{target_description}'")
+        return None
+
+    # Custom added 26 June
+    def _find_element(self, target_description):
+        """Find element by various strategies"""
+        if not target_description or not target_description.strip():
+            self.logger.log(" Empty or invalid target description — skipping element search.")
+            return None
+
+        target_description = target_description.strip()
+        target_description_lower = target_description.lower()
+
+        strategies = [
+            (By.CSS_SELECTOR, f"input[placeholder='{target_description}']"),
+            (By.CSS_SELECTOR, f"input[placeholder*='{target_description}']"),
+            (By.CSS_SELECTOR, f"[aria-label='{target_description}']"),
+            (By.CSS_SELECTOR, f"[aria-label*='{target_description}']"),
+            (By.XPATH, f"//*[contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), '{target_description_lower}')]"),
+            (By.XPATH, f"//*[normalize-space(.)='{target_description}']"),
+            (By.NAME, target_description),
+            (By.ID, target_description),
+            (By.CSS_SELECTOR, "input[type='search']"),
+            (By.CSS_SELECTOR, "input[name='q']"),
+            (By.CSS_SELECTOR, "input[name='search']"),
+            (By.CSS_SELECTOR, f"[title*='{target_description}']"),
+            (By.CSS_SELECTOR, f"input[value*='{target_description}']"),
+
+            #  FINAL fallback for links (anchors) with partial text match
+            (By.XPATH, f"//a[contains(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), '{target_description_lower}')]"),
+            (By.XPATH, f"//a[normalize-space(text())='{target_description}']")
+        ]
+
+        for strategy in strategies:
+            try:
+                # self.logger.log(f" Trying strategy {strategy} for target '{target_description}'")
+                element = self.wait.until(EC.presence_of_element_located(strategy))
+                if element.is_displayed() and element.is_enabled():
+                    self.logger.log(f" Found element by {strategy}: {self._get_element_label_for_logging(element)}")
+                    return element
+            except Exception as e:
+                self.logger.log(f" Strategy {strategy} failed: {e}")
+                continue
+        # 26 June custom added  - Brute force
+        try:
+            anchors = self.driver.find_elements(By.TAG_NAME, "a")
+            for anchor in anchors:
+                visible_text = anchor.text.strip().lower()
+                if visible_text == target_description.lower():
+                    self.logger.log(f" Matched via brute-force <a> tag text: '{visible_text}' == '{target_description}'")
+                    self.driver.execute_script("arguments[0].style.border='3px solid red'", anchor)
+                    return anchor
+
+        except Exception as e:
+            self.logger.log(f" Fallback <a> tag match failed: {e}")
+        
+        try:
+            links = self.driver.find_elements(By.TAG_NAME, "a")
+            for link in links:
+                text = link.text.strip()
+                if text:
+                    self.logger.log(f"[A]  Found link text: '{text}'")
+        except Exception as e:
+                    self.logger.log(f"Error while listing <a> tags: {e}")
+
+        self.logger.log(f" No element found for target: '{target_description}'")
+        
+        return None
+
 
     def _get_element_label_for_logging(self, element):
         """Helper to get a log-friendly label for found elements"""

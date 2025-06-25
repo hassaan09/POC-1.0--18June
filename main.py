@@ -13,6 +13,7 @@ from selenium.webdriver.chrome.options import Options # ADDED
 from webdriver_manager.chrome import ChromeDriverManager # ADDED
 import os # ADDED
 import glob # ADDED
+import hashlib
 
 
 class GUIAutomationAgent:
@@ -25,6 +26,11 @@ class GUIAutomationAgent:
         self.llm_agent = LLMAgent()
         self.executor = None # Will be initialized with shared driver
         self.step_count = 0
+        self.action_history = [] # 25 June
+
+    def _hash_ui_tree(self,ui_tree):
+        return hashlib.md5(json.dumps(ui_tree, sort_keys=True).encode()).hexdigest()
+
 
     def _initialize_shared_browser(self):
         """Initializes and returns a single shared Chrome browser instance."""
@@ -105,12 +111,19 @@ class GUIAutomationAgent:
                 # Capture current UI state using the shared driver
                 screenshot_path, ui_tree = self.ui_capturer.capture_state(self.step_count)
 
+                # 25 June added
+                # current_ui_hash = self._hash_ui_tree(ui_tree)
+                # if hasattr(self, 'prev_ui_hash') and self.prev_ui_hash == current_ui_hash:
+                #     self.logger.log("UI tree did not change — possibly stuck. Breaking loop.")
+                #     break
+                # self.prev_ui_hash = current_ui_hash
+
                 # Retrieve similar examples
                 retrieved_examples = self.retriever.retrieve_similar(instruction)
 
                 # Get LLM suggestion
                 action_suggestion = self.llm_agent.get_action_suggestion(
-                    instruction, ui_tree, retrieved_examples, screenshot_path
+                    instruction, ui_tree, retrieved_examples, screenshot_path, self.action_history
                 )
 
                 self.logger.log(f"Action suggestion: {action_suggestion}")
@@ -125,6 +138,11 @@ class GUIAutomationAgent:
                     continue
 
                 success = self.executor.execute_action(action_suggestion)
+                self.action_history.append({
+                    "step": self.step_count,
+                    "action": action_suggestion,
+                    "success": success
+                })
                 if not success:
                     self.logger.log("Action execution failed")
                     break

@@ -10,12 +10,13 @@ class LLMAgent:
         self.logger = Logger()
         self.prompt_templates = PromptTemplates()
         
-    def get_action_suggestion(self, instruction, ui_tree, retrieved_examples, screenshot_path):
-        """Get action suggestion from LLM"""
+    def get_action_suggestion(self, instruction, ui_tree, retrieved_examples, screenshot_path, action_history=None):
+        """Get action suggestion from LLM with action history"""
         try:
             prompt = self.prompt_templates.build_action_prompt(
-                instruction, ui_tree, retrieved_examples, screenshot_path
+                instruction, ui_tree, retrieved_examples, screenshot_path, action_history
             )
+            # self.logger.log(f"LLM Prompt:\n{prompt}\n")
             
             response = self._call_openai_api(prompt)
             action_suggestion = self._parse_response(response)
@@ -23,8 +24,6 @@ class LLMAgent:
             return action_suggestion
             
         except Exception as e:
-            # tb = traceback.format_exc()
-            # self.logger.log(f"Error getting LLM suggestion: {str(e)}\nTraceback: {tb}")
             self.logger.log(f"Error getting LLM suggestion: {str(e)}")
             return {"action_type": "wait", "target_element": "unknown"}
             
@@ -51,10 +50,8 @@ class LLMAgent:
             'temperature': 0.1
         }
         
-       
         response = requests.post(Config.OPENAI_API_URL, headers=headers, json=data)
         try:
-            # self.logger.log(f"LLM API raw response: {response.text}")
             result = response.json()
         except Exception as e:
             self.logger.log(f"Error decoding LLM response JSON: {str(e)}")

@@ -108,6 +108,7 @@ class AutomationAgent:
         results = []
         final_screenshot = None
         
+        
         for i, step in enumerate(steps):
             try:
                 # Skip initial browser/gmail opening steps if already done
